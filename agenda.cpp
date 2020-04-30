@@ -413,10 +413,17 @@ void Encontrar(void){
     Amigo    aux;
     int n;
     char cadena[25],cc[50];
+    /*
 	printf("Digite Cedula para Encontrar: "); 
  	int cedula; // se crea variable
-    scanf("%i", &cedula); // la cual esta va tomar el valor por teclad
+    scanf("%i", &cedula); // la cual esta va tomar el valor por teclad*/
 	int existe=0; 
+	
+	
+	printf("Digite la cedula a encontrar: ");
+    int cedula; // se crea variable para buscar el amigo
+  	cedula=atoi(gets(cc)); 	
+	
    //printf("\n Buscando a un Amigo  \n");
     fp=abrir_fichero_b(nombre_fichero,0);
     if(!(fp))
